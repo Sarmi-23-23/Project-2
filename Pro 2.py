@@ -108,3 +108,14 @@ if boton_enviar:
     # Mostrar informe en tab informe
     with tab_informe:
         st.markdown(informe_md)
+
+    if notafinal >= 8:
+        st.success("felicidades, has sacado muy buena nota")
+        st.balloons()
+    
+    elif 8> notafinal >= 5:
+        st.warning("Hay que estudir un poco más")
+
+    elif notafinal < 5:
+        st.success("Has suspendido")
+        st.snow()
